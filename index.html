@@ -2,55 +2,222 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>EarnBook – Account Deletion</title>
+  <title>Account Deletion – EarnBook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --primary: #1554D0;
+      --bg: #f4f6fb;
+      --text: #333;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f6fb;
       margin: 0;
-      padding: 20px;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #eef2ff, #f8fafc);
+      color: var(--text);
     }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
     .card {
-      max-width: 700px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      width: 100%;
+      max-width: 760px;
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 36px 32px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+      border: 1px solid var(--border);
     }
-    h1 { color: #1554D0; }
-    h3 { margin-top: 20px; }
-    a { color: #1554D0; text-decoration: none; }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin: 0;
+      color: var(--primary);
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      margin: 12px 0;
+    }
+
+    .steps {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin: 20px 0;
+    }
+
+    ol {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    ol li {
+      margin-bottom: 10px;
+      font-size: 14.5px;
+    }
+
+    .highlight {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    h3 {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-size: 17px;
+      color: #111827;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 8px 0;
+    }
+
+    ul li {
+      font-size: 14.5px;
+      margin-bottom: 8px;
+      color: var(--muted);
+    }
+
+    .notice {
+      margin-top: 24px;
+      padding: 14px 16px;
+      background: #eef2ff;
+      border-left: 4px solid var(--primary);
+      border-radius: 6px;
+      font-size: 14px;
+      color: #1e3a8a;
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 22px;
+      }
+      .card {
+        padding: 28px 22px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div class="card">
-    <h1>Account Deletion – EarnBook</h1>
+  <div class="container">
+    <div class="card">
 
-    <p>If you want to delete your EarnBook account, please follow the steps below:</p>
+      <div class="header">
+        <div class="logo">EB</div>
+        <h1>Account Deletion – EarnBook</h1>
+      </div>
 
-    <ol>
-      <li>Send an email to <b>support@earnbook.in</b></li>
-      <li>Use your registered mobile number / email ID</li>
-      <li>Subject: <b>Request for Account Deletion</b></li>
-    </ol>
+      <p>
+        If you want to delete your <strong>EarnBook</strong> account, please
+        follow the steps below carefully.
+      </p>
 
-    <p>Your account will be deleted within <b>7 working days</b>.</p>
+      <div class="steps">
+        <ol>
+          <li>
+            Send an email to
+            <strong>support@earnbook.in</strong>
+          </li>
+          <li>
+            Use your registered mobile number or email ID
+          </li>
+          <li>
+            Mention subject:
+            <span class="highlight">Request for Account Deletion</span>
+          </li>
+        </ol>
+      </div>
 
-    <h3>Data that will be deleted</h3>
-    <ul>
-      <li>Personal profile details</li>
-      <li>Transaction history</li>
-      <li>Wallet data</li>
-    </ul>
+      <p>
+        After successful verification, your account and associated data will be
+        permanently deleted within
+        <strong>7 working days</strong>.
+      </p>
 
-    <h3>Data that may be retained</h3>
-    <ul>
-      <li>Legal or regulatory required records (if any)</li>
-    </ul>
+      <h3>Data that will be deleted</h3>
+      <ul>
+        <li>Personal profile details</li>
+        <li>Transaction history</li>
+        <li>Wallet data</li>
+      </ul>
 
-    <p>For queries: <a href="mailto:support@earnbook.in">support@earnbook.in</a></p>
+      <h3>Data that may be retained</h3>
+      <ul>
+        <li>Legal or regulatory required records (if any)</li>
+      </ul>
+
+      <div class="notice">
+        This account deletion policy is applicable to all EarnBook users and
+        complies with Google Play’s User Data & Account Deletion guidelines.
+      </div>
+
+      <div class="footer">
+        For any queries, contact
+        <a href="mailto:support@earnbook.in">support@earnbook.in</a>
+      </div>
+
+    </div>
   </div>
 </body>
 </html>
